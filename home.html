@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Creation - SportsConnect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #4C586F;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #3B4560;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .container {
+      margin: 30px auto;
+      max-width: 800px;
+      background-color: #3B4560;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .form-group select,
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #525F78;
+      color: white;
+    }
+
+    .form-group textarea {
+      resize: none;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: #68A4FF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #508CCF;
+    }
+
+    footer {
+      background-color: #3B4560;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">SportsConnect</div>
+  </header>
+
+  <!-- Team Creation Form -->
+  <div class="container">
+    <h2>Create Your Team</h2>
+    <form>
+      <!-- Step 1: Choose Sport -->
+      <div class="form-group">
+        <label for="sport">Choose Sport</label>
+        <select id="sport" name="sport" required>
+          <option value="" disabled selected>Select a sport</option>
+          <option value="football">Football</option>
+          <option value="cricket">Cricket</option>
+          <option value="basketball">Basketball</option>
+          <option value="badminton">Badminton</option>
+          <option value="tennis">Tennis</option>
+        </select>
+      </div>
+
+      <!-- Step 2: Enter Playground Details -->
+      <div class="form-group">
+        <label for="playground">Enter Playground Details</label>
+        <input type="text" id="playground" name="playground" placeholder="Enter playground name or location" required>
+      </div>
+
+      <!-- Step 3: Number of Players Needed -->
+      <div class="form-group">
+        <label for="players">Number of Players Needed</label>
+        <select id="players" name="players" required>
+          <option value="" disabled selected>Select number of players</option>
+          <!-- Dropdown for 1 to 15 -->
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+
+        </select>
+      </div>
+
+      <!-- Step 4: Slot Selection -->
+      <div class="form-group">
+        <label for="slot">Choose Slot</label>
+        <select id="slot" name="slot" required>
+          <option value="" disabled selected>Select a time slot</option>
+          <option value="morning_6_7">Morning 6:00 AM - 7:00 AM</option>
+          <option value="morning_7_8">Morning 7:00 AM - 8:00 AM</option>
+          <option value="morning_8_9">Morning 8:00 AM - 9:00 AM</option>
+          <option value="evening_6_7">Evening 6:00 PM - 7:00 PM</option>
+          <option value="evening_7_8">Evening 7:00 PM - 8:00 PM</option>
+          <option value="evening_8_9">Evening 8:00 PM - 9:00 PM</option>
+        </select>
+      </div>
+
+      <!-- Step 5: Additional Information -->
+      <div class="form-group">
+        <label for="additional-info">Additional Information (Optional)</label>
+        <textarea id="additional-info" name="additional-info" rows="4"
+          placeholder="Add any additional details about the team or game"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit">Create Team</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 SportsConnect. All rights reserved.
+  </footer>
+</body>
+
+</html>

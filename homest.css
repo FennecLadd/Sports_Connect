@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("backgrounds/Background 2.png") no-repeat center center/cover;
+    color: black;
+    z-index: -1;
+    display: flex;
+}
+.mainbox {
+  max-width: 1000px; /* Controls width, keeps it equal from both sides */
+  margin: 40px auto; /* Centers the container */
+  padding: 40px; /* Provides uniform spacing inside */
+  border-radius: 24px; /* Smooth rounded corners */
+  background: white; /* Light background */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 24px 24px 0 0;
+  max-width: 90%;
+  width: 1200px;
+}
+.logo img {
+  position: absolute;  
+  top: 35px; /* Moves the image slightly above the div box */
+  right: 22%; /* Positions it towards the right corner */
+  transform: translateX(0); /* Removed -50% shift since we use right */
+  width: 350px; /* Adjusted for visibility */
+  height: auto; /* Maintains aspect ratio */
+  max-width:40%; /* Ensures it doesn't exceed a reasonable size */
+  opacity: 0.9;  
+  z-index: 10;  
+  animation: float 5s ease-in-out infinite;  
+}
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    }
+    header:hover {
+        text-decoration: underline;
+}
+.intro {
+    text-align: left;
+    padding: 50px 20px;
+  }
+
+  .intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.page1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+  }  
+    header:hover {
+        text-decoration: underline;
+
+}
+.page2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    }
+    header:hover {
+        text-decoration: underline;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .features .feature-card {
+    background-color: wheat;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .features .feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .features .feature-card p {
+    font-size: 14px;
+    margin-bottom: 20px;}
+footer {
+    background-color:white;
+    padding: 10px;
+    text-align:center;
+    color: black;
+    margin-top:auto;
+}
+.card {
+  width: 320px; 
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); 
+  background: white;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.cards-container {
+  display: grid; 
+  gap: 20px; 
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-content: center; 
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px; /* Slight rounding */
+}
+
+.card-content {
+  padding: 15px 0;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  background: #ff7f50; /* Bright button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.card-button:hover {
+  background: #ff5722; /* Darker on hover */
+}
+
+  

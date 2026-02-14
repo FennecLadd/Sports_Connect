@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(backgrounds/Background\ 1.png);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    color :rgba(0, 0, 0, 0.5)
+  }
+
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .container {
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color : rgb(56, 56, 93)
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .form-group select, 
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  .form-group textarea {
+    resize: none;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #68A4FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-group button:hover {
+    background-color: #508CCF;
+  }

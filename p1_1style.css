@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('backgrounds/Background\ 39.png') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.confirmation-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 5px;
+}
+
+h2 {
+    color: #28a745;
+}
+
+.booking-details {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.booking-details p {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cancel-btn {
+    background: #dc3545;
+    color: white;
+    margin-right: 10px;
+}
+
+.new-booking-btn {
+    background: #007bff;
+    color: white;
+}
